@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiBussines.Api</name>
+    </assembly>
+    <members>
+        <member name="M:WebApiBussines.Api.Controllers.BussinessController.GetBussiness">
+            <summary>
+            Method that does a query in table bussines and get all data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiBussines.Api.Controllers.BussinessController.GetByIdBussiness(System.Int32)">
+            <summary>
+            Method that does a query with a id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
