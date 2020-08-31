@@ -4,6 +4,12 @@
         <name>WebApiBussines.Api</name>
     </assembly>
     <members>
+        <member name="M:WebApiBussines.Api.Controllers.BussinessController.#ctor(WebApiBussines.Domain.Interface.IBussinessService)">
+            <summary>
+            Class's Constructor
+            </summary>
+            <param name="bussinessService"></param>
+        </member>
         <member name="M:WebApiBussines.Api.Controllers.BussinessController.GetBussiness">
             <summary>
             Method that does a query in table bussines and get all data
@@ -15,6 +21,13 @@
             Method that does a query with a id
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiBussines.Api.Controllers.BussinessController.PostBussiness(WebApiBussines.Domain.Models.BussinessModel)">
+            <summary>
+            Method that inserts the data in database
+            </summary>
+            <param name="model"></param>
             <returns></returns>
         </member>
     </members>

@@ -1,4 +1,6 @@
-﻿namespace WebApiBussines.Domain.Models
+﻿using System.Linq;
+
+namespace WebApiBussines.Domain.Models
 {
     public class BussinessModel
     {
@@ -11,5 +13,8 @@
         public string Email { get; set; }
 
         public string Document { get; set; }
+
+        public string Retorno { get; set; }
+
     }
 }

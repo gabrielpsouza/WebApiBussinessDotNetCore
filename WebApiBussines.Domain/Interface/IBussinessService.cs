@@ -7,6 +7,10 @@ namespace WebApiBussines.Domain.Interface
     {
         List<BussinessModel> GetBussiness();
 
-        List<BussinessModel> GetByIdBussiness(int id);
+        BussinessModel GetByIdBussiness(int id);
+
+        ReturnModel PostBussiness(BussinessModel model);
+
+        ReturnModel DeleteBussiness(int id);
     }
 }

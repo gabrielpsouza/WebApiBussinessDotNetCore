@@ -15,7 +15,11 @@ namespace WebApiBussines.Api.Controllers
     {
         private readonly IBussinessService _bussinessService;
 
-        public BussinessController(IBussinessService bussinessService) 
+        /// <summary>
+        /// Class's Constructor
+        /// </summary>
+        /// <param name="bussinessService"></param>
+        public BussinessController(IBussinessService bussinessService)
         {
             _bussinessService = bussinessService;
         }
@@ -36,9 +40,31 @@ namespace WebApiBussines.Api.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("/GetById")]
-        public List<BussinessModel> GetByIdBussiness(int id)
+        public BussinessModel GetByIdBussiness(int id)
         {
             return _bussinessService.GetByIdBussiness(id);
+        }
+
+        /// <summary>
+        /// Method that inserts the data in database
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost("/PostBussiness")]
+        public ReturnModel PostBussiness(BussinessModel model)
+        {
+            ReturnModel retorno = new ReturnModel();
+            retorno = _bussinessService.PostBussiness(model);
+            return retorno;
+         
+        }
+
+        [HttpDelete("/DeleteBussiness")]
+        public ReturnModel DeleteBussiness(int id)
+        {
+            ReturnModel retorno = new ReturnModel();
+            retorno = _bussinessService.DeleteBussiness(id);
+            return retorno;
         }
     }
 }

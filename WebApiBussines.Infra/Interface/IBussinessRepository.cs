@@ -9,6 +9,10 @@ namespace WebApiBussines.Infra.Interface
     {
         List<BussinessModel> GetBussiness();
 
-        List<BussinessModel> GetByIdBussiness(int id);
+        BussinessModel GetByIdBussiness(int id);
+
+        ReturnModel PostBussiness(BussinessModel model);
+
+        void DeleteBussiness(int id);
     }
 }

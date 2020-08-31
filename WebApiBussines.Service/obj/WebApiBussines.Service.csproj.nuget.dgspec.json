@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[3.1.7, )"
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.5.1, )"
@@ -128,6 +132,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[3.1.7, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -215,6 +223,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[3.1.7, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
